@@ -1,0 +1,34 @@
+Schemas for Tasterhood
+----------------------
+
+HighLevel Overview of Schema:
+
+TasterProfile:
+    
+    | Name | EmailId | Address | HomeZipCode | Password | InterestedCuisines | AvgPricePerMeal | DineIn | TakeOut
+
+
+RestaurantProfile:
+
+    | Name | EmailId | Address | ZipCode | Password | CuisinesOffered | AvgPricePerMeal | DateOfStarting | DineIn | TakeOut
+
+
+
+Normalized Schema:
+------------------
+
+ContactInfo:
+
+    | Id | Name | Email | Password | Address | ZipCode | Type |
+
+
+TasterProfile:
+
+    | ContactInfoId | InterestedCuisines | AvgPricePerMeal | DineIn | TakeOut 
+
+
+RestaurantProfile:
+
+    | ContactInfoId | CuisinesOffered | AvgPricePerMeal | DateOfStarting | DineIn | TakeOut
+
+
